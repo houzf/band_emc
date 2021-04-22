@@ -1,0 +1,17 @@
+ Unit cell lattice vectors (in Bohr):
+     0.00000000     5.16719153     5.16719153
+     5.16719153     0.00000000     5.16719153
+     5.16719153     5.16719153     0.00000000
+ Reciprocal lattice vectors containing 2*pi (in 1/Bohr):
+    -0.60798843     0.60798843     0.60798843
+     0.60798843    -0.60798843     0.60798843
+     0.60798843     0.60798843    -0.60798843
+ Inverse of reciprocal lattice vectors:
+     0.00000000     0.82238407     0.82238407
+     0.82238407     0.00000000     0.82238407
+     0.82238407     0.82238407    -0.00000000
+ Lengths of lattice vecotrs (in Angstrom):
+     3.86696900     3.86696900     3.86696900
+ Aangles between two of lattice vecotrs (in degree):
+ alpha(a2,a3), beta(a1,a3), gamma(a1,a2)
+    60.00000000    60.00000000    60.00000000
