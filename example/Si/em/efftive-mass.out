@@ -1,0 +1,17 @@
+ Cofficients c, b, a in E(k) = c + b *|K-K0| + a *|K-K0|^2
+ K0 at VBM:     0.00000     0.00000     0.00000
+ K0 at CBM:     0.42500     0.00000     0.42500
+ Effective masses of hole: m = -m_e * 1/(2 * a)
+ Effective masses of electron: m = m_e * 1/(2 * a)
+ m_e: electron rest mass
+ HVB: highest valence band; LCB: lowest conduction band
+ Effective masses of hole and electron
+ *********************HVB-2*****HVB-1******HVB*******LCB**
+ Non-spin-polarized results
+ [100] direction:     0.163     0.276     0.276     0.198
+ [010] direction:     0.163     0.276     0.276     1.912
+ [001] direction:     0.163     0.276     0.276     0.198
+ [110] direction:     0.113     0.276     2.617     0.354
+ [101] direction:     0.113     0.276     2.617     0.228
+ [011] direction:     0.113     0.276     2.617     0.354
+ [111] direction:     0.105     0.699     0.699     0.309
