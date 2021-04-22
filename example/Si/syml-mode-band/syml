@@ -1,0 +1,27 @@
+7  
+20  15  20  20  20  15
+G  0.0    0.0    0.0
+X  0.5    0.0    0.5 
+W  0.5    0.25   0.75
+L  0.5    0.5    0.5
+G  0.0    0.0    0.0
+K  0.375  0.375  0.75
+X  0.5    0.0    0.5 
+
+#############comment
+1 line: nhighk   !how many high symmetry k-points
+2     : ndiv(i)  !number of points between two symmetry k-points
+3     : labhk(i), phighk(i,j)   !label of high sysmmetry k-points, coordinates 
+##############
+
+\\\\X-----Gam-----L-----W-----K-----Gam
+      Delta   ^      Q     N    Xigam
+  1,21,41,61,71,91
+  X,G,L,W,K,G
+FCC
+--------------------------------------------
+W:0.5    0.25   0.75
+G:0.0    0.0    0.0
+X:0.5    0.0    0.5 
+K:0.375  0.375  0.75
+L:0.5    0.5    0.5
