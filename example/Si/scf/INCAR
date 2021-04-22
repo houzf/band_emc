@@ -1,0 +1,23 @@
+#
+SYSTEM = bulk	
+ISTART = 0
+ICHARG = 2
+PREC = high
+ALGO = normal
+ISPIN = 1
+NELM = 100
+NELMIN = 8
+#IBRION = 2
+EDIFF= 1E-6
+EDIFFG = 1E-6
+#NSW = 200
+#ISIF = 0
+ENCUT = 500.00 
+NBANDS = 20
+POTIM = 0.05
+ISMEAR = -5
+#SIGMA = 0.1
+LWAVE = T
+LCHARG = T
+NPAR = 4
+GGA  = PE

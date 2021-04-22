@@ -1,0 +1,32 @@
+mpijob CMD: mpirun -n 16 -wdir /home/z-hou/work/elements/14-Si/diamond /home/z-hou/bin/intel15-intelmpi-fftw3/original/mvasp
+nodelist(nodename mpi):
+r2i4n11.ice.nims.go.jp 16
+ running on   16 total cores
+ distrk:  each k-point on   16 cores,    1 groups
+ distr:  one band on    4 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.3.3 18Dez12 (build Apr 06 2015 16:58:45) complex                        
+  
+ POSCAR found :  1 types and       2 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.737580921167E+01    0.73758E+01   -0.28399E+03 32664   0.298E+02
+DAV:   2    -0.105256590463E+02   -0.17901E+02   -0.17286E+02 42396   0.662E+01
+DAV:   3    -0.110154391156E+02   -0.48978E+00   -0.48696E+00 40752   0.788E+00
+DAV:   4    -0.110179474490E+02   -0.25083E-02   -0.25080E-02 39908   0.690E-01
+DAV:   5    -0.110179609110E+02   -0.13462E-04   -0.13462E-04 39964   0.503E-02    0.475E+00
+DAV:   6    -0.109020879974E+02    0.11587E+00   -0.46247E-02 37756   0.575E-01    0.288E+00
+DAV:   7    -0.108484098003E+02    0.53678E-01   -0.95824E-02 39412   0.879E-01    0.160E-01
+DAV:   8    -0.108496909764E+02   -0.12812E-02   -0.46387E-03 36104   0.226E-01    0.932E-02
+DAV:   9    -0.108499098915E+02   -0.21892E-03   -0.15539E-04 39580   0.476E-02    0.612E-02
+DAV:  10    -0.108499263141E+02   -0.16423E-04   -0.76764E-06 38832   0.109E-02    0.116E-02
+DAV:  11    -0.108499303034E+02   -0.39893E-05   -0.50722E-06 37016   0.744E-03    0.587E-03
+DAV:  12    -0.108499304386E+02   -0.13525E-06   -0.37497E-07 39024   0.244E-03
+   1 F= -.10849930E+02 E0= -.10849930E+02  d E =0.000000E+00
+ writing wavefunctions
