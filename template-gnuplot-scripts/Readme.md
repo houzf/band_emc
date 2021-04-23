@@ -1,3 +1,3 @@
-# Script files of gnuplot to draw the fat-band structures.
+- Script files of gnuplot to draw the fat-band structures.
 
-# 'plot-ke4fit.sh': a script file of gnuplot to fit the effective mass.
+- 'plot-ke4fit.sh': a script file of gnuplot to fit the effective mass.
