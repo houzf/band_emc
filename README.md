@@ -15,4 +15,4 @@ The usage of the above exectuable files is listed in README.usage.
 # Note
 - Recommend the output files of the self-consistent field (SCF) calculations using the tag 'ISMEAR=-5' to be saved in a directory named 'scf/'. 
 
-- Recommand the output files of band-structure calculations to be saved separately in a directory named 'band/'. So when one runs the executable file 'bandstructureplot' in the direcctory of 'band/', the value of Fermi level will be automatically extracted from the 'OUTCAR' file in the '../scf/' directory.
+- Recommend the output files of band-structure calculations to be saved separately in a directory named 'band/'. So when one runs the executable file 'bandstructureplot' in the direcctory of 'band/', the value of Fermi level will be automatically extracted from the 'OUTCAR' file in the '../scf/' directory.
