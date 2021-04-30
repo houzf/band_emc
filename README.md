@@ -10,7 +10,7 @@
 
 5. after compiling successfully, the following executable files are generated: bs_kpoints_gen, bandstructureplot, fkpt_vbm_cbm,  em_kpoints_gen, em_linefit, fs_bxsf
 
-The usage of the above exectuable files is listed in README.usage.
+The usage of the above executable files is listed in README.usage.
 
 # Note
 - Recommend the output files of the self-consistent field (SCF) calculations using the tag 'ISMEAR=-5' to be saved in a directory named 'scf/'. 
