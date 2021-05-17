@@ -104,7 +104,7 @@
 &                   MATMUL(kptline(k,:),inv_recip_lat), &
 &                   w, '  !', idx(j,1), idx(j,2), idx(j,3), 'direction'
              else
-                write(50,'(3F15.8,F10.3)') MATMUL(kptline(i,:),inv_recip_lat), w
+                write(50,'(3F15.8,F10.3)') MATMUL(kptline(k,:),inv_recip_lat), w
              end if
           end do
        end do
