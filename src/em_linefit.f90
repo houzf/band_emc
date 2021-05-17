@@ -128,6 +128,7 @@ program main
       if ( (j*2*np+1)+(icv-1)*nkpt1m .LE. nkpt1m*icv) then
           do  k = 2+ (j-1)*2*np+(icv-1)*nkpt1m,(j*2*np+1)+(icv-1)*nkpt1m
             jj=jj+1
+            !write(*,*)icv, j, jj, k
             normkbuf= DOT_PRODUCT(kptc(k,:)-kptc(1+(icv-1)*nkpt1m,:),  &
 &                          kptc(k,:)-kptc(1+(icv-1)*nkpt1m,:)) 
             if ( jj .LE. np+1) then
@@ -140,9 +141,9 @@ program main
             end do
             vey(jj,4)= eiglcb(i,1,k)*ev2h
             if ( jj .EQ. np+2) then
-              write(15,'(5F12.5)') vex(1), (vey(1,im),im=1,4)
+              write(15,'(5F15.8)') vex(1), (vey(1,im),im=1,4)
             end if
-            write(15,'(5F12.5)') vex(jj), (vey(jj,im),im=1,4)
+            write(15,'(5F15.8)') vex(jj), (vey(jj,im),im=1,4)
           end do
           do im = 1, 4
              coef(:,im)=polyfit(vex,vey(:,im),degree)
@@ -153,10 +154,12 @@ program main
                  do im = 1, 3
                     em(j,im)= -0.5d0/coef(degree+1,im)
                  end do
-!               write(14,'(3F10.3,A10)') (em(j,im), im= 1,3), '---'
+!                write(14,'(A2,3I1,A12,3F10.3,A10)') '[',idx(j,1),idx(j,2),idx(j,3),&
+! &                     '] direction:', (em(j,im), im= 1,3), '---'
               else
                  em(j,4) = 0.5d0/coef(degree+1,4)
-!                write(14,'(3A10,F10.3)') '---', '---','---', em(j,4) 
+!                 write(14,'(A2,3I1,A12,3A10,F10.3)') '[',idx(j,1),idx(j,2),idx(j,3), & 
+! &                 '] direction:', '---', '---','---', em(j,4) 
               end if
           else
               do im = 1, 3
@@ -166,10 +169,12 @@ program main
 !             write(14,'(4F10.3)') (em(j,im), im= 1, 4)
           end if
         end if
-        write(15,*) 
+        !write(15,*) 
+        write(15,'(A2,3I1,A20, 3F12.8, A11)') '#[',idx(j,1),idx(j,2),idx(j,3),  &
+&              '] direction around (', (kptc(1+(icv-1)*nkpt1m,ii), ii=1,3), ' ) end here.' 
       end do
      end do
-!! print out the effective masses of hole and electrons for each directions      
+!! print out the effective masses of hole and electrons for each direction      
      do  j = 1, 7
           write(14,'(A2,3I1,A12,4F10.3)') '[',idx(j,1),idx(j,2),idx(j,3), &
                 '] direction:', (em(j,im), im= 1, 4)
