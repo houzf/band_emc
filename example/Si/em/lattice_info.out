@@ -9,4 +9,9 @@
  Inverse of reciprocal lattice vectors:
      0.00000000     0.82240409     0.82240409
      0.82240409     0.00000000     0.82240409
-     0.82240409     0.82240409    -0.00000000
+     0.82240409     0.82240409     0.00000000
+ Lengths of lattice vecotrs (in Angstrom):
+     3.86706313     3.86706313     3.86706313
+ Aangles between two of lattice vecotrs (in degree):
+ alpha(a2,a3), beta(a1,a3), gamma(a1,a2)
+    60.00000000    60.00000000    60.00000000
