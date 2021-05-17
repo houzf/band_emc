@@ -23,7 +23,7 @@ SUBROUTINE readposcar()
   filename ="POSCAR"
   inquire(file=filename,exist=lexist)
   if ( .not.  lexist) then
-       write(*,'(3A)') "Error:",trim(filename), "does not exist"
+       write(*,'(3A)') "Error:",trim(filename), " does not exist"
        STOP
   end if
   open(10,file=filename,status='old')
