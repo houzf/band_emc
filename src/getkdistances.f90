@@ -9,6 +9,7 @@
      real(dp), intent(in), dimension(n,3) :: kpts 
      real(dp), intent(out), dimension(n) :: kdist 
      real(dp), dimension(3) :: kbuf
+     real(dp) delta
 
      call readposcar()
      kdist(1) = 0.0d0
@@ -22,7 +23,11 @@
        do i = 2, n
           kbuf=MATMUL(kpts(i,:),recip_lat) - &
  &               MATMUL(kpts(i-1,:),recip_lat) 
-          kdist(i)= kdist(i-1) + sqrt(DOT_PRODUCT(kbuf, kbuf)) 
+          delta = sqrt(DOT_PRODUCT(kbuf, kbuf))
+          if ((i > 2) .AND. (delta > 2*kdist(2))) then
+              delta = 0.0
+          end if
+          kdist(i)= kdist(i-1) + delta 
        end do
      end if
 
