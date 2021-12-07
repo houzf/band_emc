@@ -97,13 +97,19 @@
        write(22,*) 'K-points along high symmetry lines'
        write(22,*) nkpoints_gen 
        write(22,*) 'Reciprocal'
-       write(22,'(3F12.6,F8.3)') (high_sym_kpoints(1,ii), ii = 1,3), weight
+       write(22,'(3F12.6,F8.3,1X,A,1X,2A)') (high_sym_kpoints(1,ii), ii = 1,3), weight, &
+ &                    '!', lab_high_sym_kpoints(1)
        do i = 1, n_high_sym_kpoints -1
           delkpt(i,:) = (high_sym_kpoints(i+1,:) - high_sym_kpoints(i,:)) &
  &                      /dble(segments(i))
           do j = 1, segments(i)
-             write(22,'(3F12.6,F8.3)')  (high_sym_kpoints(i,ii) + delkpt(i,ii)  &
+             if  (j == segments(i) )  then
+                write(22,'(3F12.6,F8.3,1X,A,1X,2A)')  (high_sym_kpoints(i,ii) + delkpt(i,ii)  &
+ &                   * dble(j), ii=1, 3), weight, '!', lab_high_sym_kpoints(i+1) 
+             else
+                write(22,'(3F12.6,F8.3)')  (high_sym_kpoints(i,ii) + delkpt(i,ii)  &
  &                   * dble(j), ii=1, 3), weight 
+             end if
           end do
       end do
  ! Deallocate storage for array A 
